@@ -35,83 +35,31 @@ st.markdown(
     """
     <style>
   
-.stApp {
-    background-color: #F5F8F4;
-    color: #19352A;
-}
 
-.stApp p,
-.stApp label,
-.stApp .stMarkdown,
-.stApp [data-testid="stWidgetLabel"],
-.stApp [data-testid="stCaptionContainer"],
-.stApp [data-testid="stMetricLabel"],
-.stApp [data-testid="stMetricLabel"] p {
-    color: #19352A !important;
-}
-
-.stApp h1,
-.stApp h2,
-.stApp h3,
-.stApp h4 {
-    color: #19352A !important;
-}
-
-[data-testid="stSidebar"] {
-    background-color: #E8F1E8;
-}
-
-[data-testid="stSidebar"] p,
-[data-testid="stSidebar"] label,
-[data-testid="stSidebar"] h1,
-[data-testid="stSidebar"] h2,
-[data-testid="stSidebar"] h3,
-[data-testid="stSidebar"] [data-testid="stMarkdownContainer"] {
-    color: #19352A !important;
-}
-
+/* Make form fields readable */
 .stApp input,
 .stApp textarea,
 .stApp [data-baseweb="select"] > div {
+    background-color: #FFFFFF !important;
     color: #19352A !important;
+    -webkit-text-fill-color: #19352A !important;
+    border-color: #B7CBB9 !important;
 }
 
 .stApp input::placeholder,
 .stApp textarea::placeholder {
     color: #64756B !important;
-    opacity: 1;
+    -webkit-text-fill-color: #64756B !important;
+    opacity: 1 !important;
 }
 
-.hero {
-    padding: 28px;
-    border-radius: 18px;
-    background: linear-gradient(120deg, #14532D, #2E8B57);
-    color: #FFFFFF;
-    margin-bottom: 24px;
-}
-
-.hero h1 {
-    color: #FFFFFF !important;
-}
-
-.hero p {
-    color: #FFFFFF !important;
-}
-
+/* Make buttons readable */
 div.stButton > button,
 div.stFormSubmitButton > button {
+    background-color: #217A46 !important;
     color: #FFFFFF !important;
-    background-color: #217A46;
-    border-color: #217A46;
-    border-radius: 10px;
-}
-
-[data-testid="stMetricValue"] {
-    color: #14532D !important;
-}
-
-[data-testid="stAlert"] {
-    color: #19352A;
+    -webkit-text-fill-color: #FFFFFF !important;
+    border-color: #217A46 !important;
 }
 
     </style>

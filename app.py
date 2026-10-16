@@ -34,18 +34,86 @@ CURRENCY_CODES = list(CURRENCIES.keys())
 st.markdown(
     """
     <style>
-    .stApp { background: #F5F8F4; color: #19352A; }
-    [data-testid="stSidebar"] { background: linear-gradient(180deg,#E8F1E8 0%,#F4F8F2 100%); }
-    .hero { padding: 30px 32px; border-radius: 22px; background: linear-gradient(120deg,#124B2A,#27834C); color: #fff; margin: 4px 0 24px 0; box-shadow: 0 10px 30px rgba(18,75,42,.12); }
-    .hero h1 { color: white; margin: 0 0 8px 0; font-size: 2.1rem; }
-    .hero p { color: #E3F3E6; font-size: 1.03rem; margin: 0; }
-    div[data-testid="stMetric"] { background: #FFFFFF; border: 1px solid #E0EAE0; padding: 18px 20px; border-radius: 16px; box-shadow: 0 4px 14px rgba(20,65,36,.045); }
-    div[data-testid="stMetricLabel"] { color: #587362; }
-    div[data-testid="stMetricValue"] { color: #164B2B; }
-    div.stButton > button[kind="primary"], div.stFormSubmitButton > button { background:#217A46; border-color:#217A46; color:white; border-radius:11px; min-height:44px; }
-    div[data-testid="stForm"] { background: white; border: 1px solid #E0EAE0; border-radius: 16px; padding: 18px; }
-    div[data-testid="stAlert"] { border-radius: 12px; }
-    h2, h3 { color: #174D2D; }
+  
+.stApp {
+    background-color: #F5F8F4;
+    color: #19352A;
+}
+
+.stApp p,
+.stApp label,
+.stApp .stMarkdown,
+.stApp [data-testid="stWidgetLabel"],
+.stApp [data-testid="stCaptionContainer"],
+.stApp [data-testid="stMetricLabel"],
+.stApp [data-testid="stMetricLabel"] p {
+    color: #19352A !important;
+}
+
+.stApp h1,
+.stApp h2,
+.stApp h3,
+.stApp h4 {
+    color: #19352A !important;
+}
+
+[data-testid="stSidebar"] {
+    background-color: #E8F1E8;
+}
+
+[data-testid="stSidebar"] p,
+[data-testid="stSidebar"] label,
+[data-testid="stSidebar"] h1,
+[data-testid="stSidebar"] h2,
+[data-testid="stSidebar"] h3,
+[data-testid="stSidebar"] [data-testid="stMarkdownContainer"] {
+    color: #19352A !important;
+}
+
+.stApp input,
+.stApp textarea,
+.stApp [data-baseweb="select"] > div {
+    color: #19352A !important;
+}
+
+.stApp input::placeholder,
+.stApp textarea::placeholder {
+    color: #64756B !important;
+    opacity: 1;
+}
+
+.hero {
+    padding: 28px;
+    border-radius: 18px;
+    background: linear-gradient(120deg, #14532D, #2E8B57);
+    color: #FFFFFF;
+    margin-bottom: 24px;
+}
+
+.hero h1 {
+    color: #FFFFFF !important;
+}
+
+.hero p {
+    color: #FFFFFF !important;
+}
+
+div.stButton > button,
+div.stFormSubmitButton > button {
+    color: #FFFFFF !important;
+    background-color: #217A46;
+    border-color: #217A46;
+    border-radius: 10px;
+}
+
+[data-testid="stMetricValue"] {
+    color: #14532D !important;
+}
+
+[data-testid="stAlert"] {
+    color: #19352A;
+}
+
     </style>
     """,
     unsafe_allow_html=True,
